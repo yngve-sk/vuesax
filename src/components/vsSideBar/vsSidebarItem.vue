@@ -54,9 +54,9 @@ export default {
     }
   },
   methods:{
-    setIndexActive () {
+    setIndexActive (event) {
       this.$parent.setIndexActive(this.index)
-      this.$emit('click')
+      this.$emit('click', event)
     }
   }
 }
